@@ -19,7 +19,7 @@
 
   input:focus ~ label,
   input:not(:placeholder-shown) ~ label {
-    @apply -translate-y-2 text-xsmall-regular; 
+    @apply -translate-y-2 text-xsmall-regular;
   }
 
   input:focus ~ label {
@@ -51,7 +51,7 @@
 
 @layer components {
   .content-container {
-    @apply max-w-[1440px] w-full mx-auto px-8
+    @apply max-w-[1440px] w-full mx-auto px-8;
   }
 
   .contrast-btn {
@@ -108,5 +108,49 @@
 
   .text-3xl-semi {
     @apply text-[36px] leading-[48px] font-semibold;
+  }
+}
+
+#logoContainer {
+  width: 700px;
+  height: 700px;
+}
+#medusaLogo {
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  opacity: 0.7;
+  animation-name: Prespect;
+  transition: 0.8s ease-in-out;
+  animation-duration: 4s;
+}
+#medusaLogo img {
+  animation-name: movement;
+  animation-duration: 6s;
+  transition: 0.8s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes Prespect {
+  0% {
+    transform: perspective(0px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  }
+  50% {
+    transform: perspective(800px);
+  }
+  75% {
+    transform: perspective(800px) rotateY(-15deg) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  }
+}
+@keyframes movement {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
   }
 }
