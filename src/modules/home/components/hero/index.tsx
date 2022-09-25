@@ -1,10 +1,29 @@
 import UnderlineLink from "@modules/common/components/underline-link"
+import style from "../../../../styles/hero.module.css"
 import Image from "next/image"
 
 const Hero = () => {
   return (
     <div className="h-[90vh] w-full relative">
       <div className="text-black absolute inset-1 z-1 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
+        <div id={style.bubbles}>
+          <Image
+            id={style.bubblesImage1}
+            src="/VectorBubble1.svg"
+            alt="vector bubble"
+            width={190}
+            height={190}
+            draggable="false"
+          />
+          <Image
+            id={style.bubblesImage2}
+            src="/VectorBubble2.svg"
+            alt="vector bubble 2"
+            width={120}
+            height={120}
+            draggable="false"
+          />
+        </div>
         <div className="flex flex-row mb-4">
           <Image
             src="/medusa-icon.svg"
@@ -33,7 +52,7 @@ const Hero = () => {
         </p>
         <UnderlineLink href="/store">Explore products</UnderlineLink>
       </div>
-      <div id="medusaLogo" className="float-right mt-[6rem] mr-[5rem]">
+      <div id={style.medusaLogo} className="float-right mt-[6rem] mr-[5rem]">
         <Image
           src="/medusa-icon.svg"
           width={804}
@@ -42,7 +61,7 @@ const Hero = () => {
           priority={true}
           quality={90}
           objectFit="cover"
-          alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
+          alt="medusa icon"
           className="absolute inset-0"
           draggable="false"
         />
