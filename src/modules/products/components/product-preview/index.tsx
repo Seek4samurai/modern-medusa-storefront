@@ -12,7 +12,7 @@ const ProductPreview = ({
   return (
     <Link href={`/products/${handle}`}>
       <a>
-        <div>
+        <div className="p-2 rounded-xl transition-all hover:bg-gradient-to-r from-fuchsia-200 to-fuchsia-100 hover:scale-[1.02]">
           <Thumbnail thumbnail={thumbnail} size="full" />
           <div className="text-base-regular mt-2">
             <span>{title}</span>
@@ -25,7 +25,7 @@ const ProductPreview = ({
                     </span>
                   )}
                   <span
-                    className={clsx("font-semibold", {
+                    className={clsx("font-semibold text-fuchsia-700", {
                       "text-rose-500": price.price_type === "sale",
                     })}
                   >

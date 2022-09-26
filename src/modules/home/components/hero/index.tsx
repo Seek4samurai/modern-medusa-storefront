@@ -46,8 +46,8 @@ const Hero = () => {
             The Open Source Shopify Alternative <br />
           </div>
           <i className="text-zinc-700 text-xl z-10">
-            Medusa is a composable engine that combines an amazing developer
-            experience with endless customizations for merchants to scale.
+            Get all fashionable fits on Medusa merch store. Be it winter or
+            summer, we got you covered!
           </i>
         </p>
         <UnderlineLink href="/store">Explore products</UnderlineLink>
