@@ -17,7 +17,7 @@
 }
 
 #medusaLogo {
-  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  transform: perspective(800px) rotateY(16deg) scale(0.9) rotateX(10deg);
   opacity: 0.7;
   animation-name: Prespect;
   transition: 0.8s ease-in-out;
@@ -25,8 +25,8 @@
 }
 
 #medusaLogo:hover {
-  transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
-  filter: drop-shadow(10px 7px 3px #000);
+  /* transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg); */
+  filter: drop-shadow(8px 7px 1px #000);
 }
 
 #medusaLogo img {
@@ -47,7 +47,7 @@
     transform: perspective(800px) rotateY(-15deg) rotateX(10deg);
   }
   100% {
-    transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+    transform: perspective(800px) rotateY(16deg) scale(0.9) rotateX(10deg);
   }
 }
 

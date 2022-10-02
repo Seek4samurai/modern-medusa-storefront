@@ -8,9 +8,11 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import { MdLightMode, MdDarkMode } from "react-icons/md/"
 
 const Nav = () => {
   const { pathname } = useRouter()
+  const [dark, setDark] = useState(false)
   const [isHome, setIsHome] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -77,6 +79,16 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
+            <div
+              className="hidden small:flex items-center gap-x-6 h-full cursor-pointer"
+              onClick={() => setDark(!dark)}
+            >
+              {dark ? (
+                <MdDarkMode size={24}></MdDarkMode>
+              ) : (
+                <MdLightMode size={24}></MdLightMode>
+              )}
+            </div>
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
               <Link href="/account">
