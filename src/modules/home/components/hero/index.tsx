@@ -4,8 +4,8 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] w-full relative">
-      <div className="text-black absolute inset-1 z-1 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
+    <div className="w-full flex flex-row justify-center items-center text-center">
+      <div className="text-black inset-1 z-1 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
         <div id={style.bubbles}>
           <Image
             id={style.bubblesImage1}
