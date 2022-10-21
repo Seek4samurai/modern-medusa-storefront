@@ -1,3 +1,4 @@
+
 <p align="center">
   <a href="https://www.medusajs.com">
     <img alt="Medusa" src="https://user-images.githubusercontent.com/7554214/153162406-bf8fd16f-aa98-4604-b87b-e13ab4baf604.png" width="100" />
@@ -28,7 +29,7 @@ Medusa is an open-source headless commerce engine that enables developers to cre
 	<b>Enjoy a more modern browser user interface for your Medusa Store!</b>
 </p>
 
-# Overview
+# Modern Medusa Storefront! 🛍️
 
 ![Modern Medusa Store](https://raw.githubusercontent.com/Seek4samurai/custom-medusa-storefront/main/public/demo/hero-demo.png)
 
@@ -39,21 +40,16 @@ The Medusa Next.js Starter is built with:
 - [Typescript](https://www.typescriptlang.org/)
 - [Medusa](https://medusajs.com/)
 
-# Quickstart
+# Preview! 🚀
 
-Here's a short video that explains the project!!!
+## Here's a short video that explains the project!!!
 
 [![YouTube video](https://i.ytimg.com/vi/jeZ0XTyc5Tk/maxresdefault.jpg)](https://www.youtube.com/watch?v=jeZ0XTyc5Tk)
 
-## Deploy in 5 minutes
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/medusajs/nextjs-starter-medusa)
 
 ![Medusa footer](https://raw.githubusercontent.com/Seek4samurai/custom-medusa-storefront/main/public/demo/footer-demo.png)
 
-## Setting up the environment variables
-
-Navigate into your projects directory and get your enviroment variables ready:
+# Run on you system! 👨‍💻
 
 ### Clone Repository
 
@@ -74,7 +70,7 @@ Use Yarn to install all dependencies.
 yarn
 ```
 
-### Start developing
+### Start developing 🚀
 
 You are now ready to start up your project.
 
@@ -93,18 +89,19 @@ Edit `/pages/index.tsx` to see your site update in real-time!
 
 Read more on [Medusa Docs](https://docs.medusajs.com/).
 
-# Short project description
+# Short project description 📜
 
 Medusa Modern Store is basically a working prototype of the Medusa Next.js Starter with better UI & colors. There are some changes to the UI like adding buttons with different styles. To run on your system. Follow the steps mentioned above!
 
-# New Modern Medusa Store
+### New Modern Medusa Store
 
 Since most of the developers love to use Medusa Next.js starter. Here, we have decided to upgrade the previous Medusa store UI to make it more Medusa like :P
 Make sure you start with cloning this repo and start as it's directed in the [Medusa Docs](https://docs.medusajs.com/). Once you're in you can view the whole changes in the UI.
 
-Check out this repository.
+# Participant 🙋‍♂️
+Gourav Singh Rawat ---> [Github](https://github.com/seek4samurai/) & [Twitter](https://twitter.com/Seek4Samurai)
 
-# Resources
+# Resources 📚
 
 ## Learn more about Medusa
 
