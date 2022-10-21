@@ -8,11 +8,9 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { MdLightMode, MdDarkMode } from "react-icons/md/"
 
 const Nav = () => {
   const { pathname } = useRouter()
-  const [dark, setDark] = useState(false)
   const [isHome, setIsHome] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -49,18 +47,12 @@ const Nav = () => {
     >
       <header
         className={clsx(
-          "relative h-16 px-8 mx-auto transition-colors bg-transparent border-b border-transparent duration-200 group-hover:bg-black group-hover:border-gray-200",
-          {
-            "!bg-white !border-gray-200": !isHome || isScrolled,
-          }
+          "relative h-16 px-8 mx-auto transition-colors bg-black border-b border-gray-200"
         )}
       >
         <nav
           className={clsx(
-            "text-white-900 flex items-center justify-between w-full h-full text-small-regular transition-colors duration-200",
-            {
-              "text-black group-hover:text-white": isHome && !isScrolled,
-            }
+            "text-white flex items-center justify-between w-full h-full text-small-regular transition-colors duration-200"
           )}
         >
           <div className="flex-1 basis-0 h-full flex items-center">
@@ -79,16 +71,6 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div
-              className="hidden small:flex items-center gap-x-6 h-full cursor-pointer"
-              onClick={() => setDark(!dark)}
-            >
-              {dark ? (
-                <MdDarkMode size={24}></MdDarkMode>
-              ) : (
-                <MdLightMode size={24}></MdLightMode>
-              )}
-            </div>
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
               <Link href="/account">
