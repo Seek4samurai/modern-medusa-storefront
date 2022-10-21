@@ -96,7 +96,7 @@ const AddAddress: React.FC = () => {
       <Modal isOpen={state} close={handleClose}>
         <Modal.Title>Add address</Modal.Title>
         <Modal.Body>
-          <div className="grid grid-cols-1 gap-y-2">
+          <div className="grid grid-cols-1 gap-y-2 pb-2">
             <div className="grid grid-cols-2 gap-x-2">
               <Input
                 label="First name"
@@ -176,12 +176,16 @@ const AddAddress: React.FC = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button
-            className="!bg-gray-200 !text-gray-900 !border-gray-200 min-h-0"
+            className="!bg-gray-100 !text-gray-900 !border-fuchsia-50 min-h-0 hover:!border-fuchsia-400"
             onClick={handleClose}
           >
             Cancel
           </Button>
-          <Button className="min-h-0" onClick={submit} disabled={submitting}>
+          <Button
+            className="min-h-0 bg-fuchsia-700 border-fuchsia-400 text-white hover:!bg-fuchsia-400"
+            onClick={submit}
+            disabled={submitting}
+          >
             Save
             {submitting && <Spinner />}
           </Button>

@@ -47,7 +47,7 @@ const AccountNav = () => {
                   Orders
                 </AccountNavLink>
               </li>
-              <li className="text-grey-700">
+              <li className="text-grey-700 hover:bg-fuchsia-300 p-2">
                 <button type="button" onClick={handleLogout}>
                   Log out
                 </button>
@@ -71,8 +71,8 @@ const AccountNavLink = ({ href, route, children }: AccountNavLinkProps) => {
   return (
     <Link href={href}>
       <a
-        className={clsx("text-gray-700", {
-          "text-gray-900 font-semibold": active,
+        className={clsx("text-gray-700 hover:bg-fuchsia-300 p-2", {
+          "text-fuchsia-600 font-semibold hover:text-gray-700": active,
         })}
       >
         {children}
